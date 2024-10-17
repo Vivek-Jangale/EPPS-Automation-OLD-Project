@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="1" name="epps-test suite " verbose="1" >
+
+
+<!--   <test name="SDMS Regression test" > -->
+<!--    	<classes> -->
+<!-- 	   	<class name="com.epps.sdms.test.SDMSMastersDep"/> -->
+<!--   	</classes> -->
+<!--   </test> -->
+   <test name="SDMS Regression test2" >
+   	<classes>
+	   	<class name="com.epps.frts.test.FRSTMasters"/>
+  	</classes>
+  </test>
+</suite>

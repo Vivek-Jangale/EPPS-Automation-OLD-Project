@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="1" name="epps-test suite " verbose="1" >
+
+
+  <test name="BPM Regression test" >
+   	<classes>
+	   	<class name="com.epps.bpm.test.BusinessPolicyManagement"/>
+  	</classes>
+  </test>
+  <test name="FAS BankSetup Regression test" >
+   	<classes>
+   		<class name="com.epps.fas.test.BankMaster"/>
+   	</classes>
+  </test>
+  <test name="HRMS EmployeeSetup Regression test" >
+   	<classes>
+	   	<class name="com.epps.hrms.test.EmployeeSetupMaster"/>
+   	 </classes>
+  </test>
+  <test name="BPM Dep. Regression test" >
+   	<classes> 
+	   	<class name="com.epps.bpm.test.BusinessPolicyManagementDep"/>
+  	 </classes>
+  </test>
+  <test name="PQMS QualityParamter Regression test" >
+   	<classes> 
+	   	<class name="com.epps.pqms.test.QualityParameterMaster"/>
+	 </classes>
+  </test>
+  <test name="MMS Independent Regression test" >
+   	<classes> 
+	   	<class name="com.epps.mms.test.MaterialMangement"/>
+   	 </classes>
+  </test>
+ <test name="FAS ApproveSupplier Regression test" >
+   	<classes> 
+	   	<class name="com.epps.fas.test.ApproveSupplierTransporter"/>
+   	 </classes>
+  </test>
+  <test name="FAS CostCenterSetup Regression test" >
+   	<classes> 
+	   	<class name="com.epps.fas.test.CostCenterSetup"/>
+   	 </classes>
+  </test>
+  <test name="FAS PQMSMasters Regression test" >
+   	<classes> 
+	   	<class name="com.epps.pqms.test.PQMSMasters"/>
+   	 </classes>
+  </test>
+  
+  <test name="FAS PQMSMastersDep Regression test" >
+   	<classes> 
+	   	<class name="com.epps.pqms.test.PQMSMastersDep"/>
+   	 </classes>
+  </test>
+</suite>

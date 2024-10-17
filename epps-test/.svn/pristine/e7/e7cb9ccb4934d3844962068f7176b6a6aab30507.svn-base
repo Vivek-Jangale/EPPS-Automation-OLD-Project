@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.epps.bpm.test.BusinessPolicyManagement">
+        <methods>
+          <include name="testResetPassword"/>
+          <include name="testCityMaster"/>
+          <include name="testCurrrencyRateMaster"/>
+          <include name="testCountryMaster"/>
+          <include name="tearDown"/>
+          <include name="testCurrencyMaster"/>
+          <include name="testDivisionMaster"/>
+          <include name="testChangePassword"/>
+          <include name="testUnitofMeasurement"/>
+          <include name="testScreenwiseParameter"/>
+          <include name="testFinancialYearMaster"/>
+          <include name="setUpBPM"/>
+          <include name="testPaymentTermMaster"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="testDepartmentMaster"/>
+          <include name="selectModule"/>
+          <include name="testEmailServerProperties"/>
+          <include name="testRoleMaster"/>
+          <include name="testStateMaster"/>
+          <include name="testLocationMaster"/>
+        </methods>
+      </class> <!-- com.epps.bpm.test.BusinessPolicyManagement -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

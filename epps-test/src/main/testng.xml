@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="TestAll">
+ 
+	<test name="order">
+		<packages>
+			<package name="com.epps.admin.*" />
+			<class name ="Admin"></class>
+		</packages>
+	</test>
+ 
+</suite>

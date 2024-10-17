@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test thread-count="5" name="Command line test(failed)">
+    <classes>
+      <class name="com.epps.sdms.test.SDMSMasters">
+        <methods>
+          <include name="setUp"/>
+          <include name="testVehicalInMaster"/>
+          <include name="testApprovePriceBook"/>
+          <include name="testPriceBookItemList"/>
+          <include name="testLocationToCustomerLink"/>
+          <include name="testPriceBook"/>
+          <include name="tearDown"/>
+          <include name="testExportInvoiceClause"/>
+          <include name="testItemToCustomerLinkMaster"/>
+          <include name="testSalesChannelMaster"/>
+          <include name="testCAMCSACutomerLink"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="selectModule"/>
+          <include name="testVehicalMaster"/>
+          <include name="testVehicalOutMaster"/>
+          <include name="testCustomerConsigneeLink"/>
+        </methods>
+      </class> <!-- com.epps.sdms.test.SDMSMasters -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

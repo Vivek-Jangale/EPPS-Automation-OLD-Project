@@ -1,0 +1,53 @@
+package com.epps.common.constant;
+import org.openqa.selenium.WebDriver;
+
+
+public class ApplicationConstants   {
+	
+	
+public static final String APP_URL = "http://164.52.192.41:8287/epps-protest";	
+
+public static final String APP_USERNAME = "sys_admin5@eppsinfotech.com";
+
+public static final String APP_DIVISION = "5";
+
+public static final String APP_ROLE = "2";
+
+public static final String APP_PASSWARD = "00005";
+	
+public static final String FAS_MODULE = "//*[@class='caption'][text() = 'Finance & Accounting']";
+
+public static final String SDMS_MODULE = "//*[@class='caption'][text() = 'Sales Management']";
+	
+public static final String HRMS_MODULE = "//*[@class='caption'][text() = 'Human Resource']";
+	  
+public static final String MMS_MODULE = "//*[@class='caption'][text() = 'Materials']";
+	
+public static final String MIS_MODULE = "//*[@class='caption'][text()= 'MIS']";
+
+public static final String PQMS_MODULE = "//*[@class='caption'][text()= 'Production & Quality']";
+
+public static final String FRTS_MODULE = "//*[@class='caption'][text()= 'Freight']";
+
+public static final String OUTSOURC_MODULE = "//*[@class='caption'][text()= 'Out-Sourcing']"; //Previously known as SBCT_MODULE
+
+public static final String INSOUR_MODULE = "//*[@class='caption'][text()= 'In-Sourcing']"; // Previously known as JOB_MODULE
+
+public static final String OTHERS_MODULE = "//*[@class='caption'][text()= 'Other']"; 
+
+public static final String ADMIN_MODULE = "//*[@class='caption'][text()= 'EPPS Administration']";
+
+public static final String HOME_BUTTON = "//*[@title='Home']";
+
+public static final String LOGIN_BUTTON = "//*[text()='LOGIN']";
+
+public static final String BPM_MODULE = "//*[text() = 'Business Policy Management']"; // Previously known as SYSAD_MODULE
+
+public static final String CRM_MODULE = "//div[@class='caption'][contains(text(),'CRM PLUGIN')]";
+
+public static final String Path_ScreenShot = "D:/Working/workspaces/epps-Lite-Automation/epps-lite-test/Screenshots";
+
+private String sTestCaseName;
+
+public static final String Error_Msg = "//*[@class='modal-title'][text()='Error']";
+}

@@ -1,0 +1,72 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Default suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:44</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;BusinessPolicyManagement.setUpBPM()[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&gt;&gt;setUpBPM</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:51</td>   <td>7064</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testCountryMaster()[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testCountryMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:51</td>   <td>7077</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:53</td>   <td>9218</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testStateMaster()[pri:1, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testStateMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:53</td>   <td>9218</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:57</td>   <td>13360</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testCityMaster()[pri:3, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testCityMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:30:57</td>   <td>13360</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:02</td>   <td>17530</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testPaymentTermMaster()[pri:4, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testPaymentTermMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:02</td>   <td>17534</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:06</td>   <td>21718</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testDepartmentMaster()[pri:5, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testDepartmentMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:06</td>   <td>21718</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:10</td>   <td>25881</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testLocationMaster()[pri:6, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testLocationMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:10</td>   <td>25881</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:14</td>   <td>30044</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testDivisionMaster()[pri:7, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testDivisionMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:14</td>   <td>30090</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:18</td>   <td>34289</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testFinancialYearMaster()[pri:8, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testFinancialYearMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:18</td>   <td>34320</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:23</td>   <td>38522</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testRoleMaster()[pri:9, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testRoleMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:23</td>   <td>38538</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:27</td>   <td>42724</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testCurrencyMaster()[pri:10, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testCurrencyMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:27</td>   <td>42728</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:31</td>   <td>46885</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testUnitofMeasurement()[pri:11, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testUnitofMeasurement</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:31</td>   <td>46948</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:35</td>   <td>51143</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testCurrrencyRateMaster()[pri:13, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testCurrrencyRateMaster</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:35</td>   <td>51150</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:39</td>   <td>55356</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testScreenwiseParameter()[pri:14, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testScreenwiseParameter</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:39</td>   <td>55360</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:44</td>   <td>59540</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testEmailServerProperties()[pri:15, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testEmailServerProperties</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:44</td>   <td>59540</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:48</td>   <td>63705</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testResetPassword()[pri:16, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testResetPassword</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:48</td>   <td>63720</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:52</td>   <td>67881</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="BusinessPolicyManagement.testChangePassword()[pri:17, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">testChangePassword</td> 
+  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:52</td>   <td>67888</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;takeScreenShotOnFailure</td> 
+<td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+<tr bgcolor="a8c871">  <td>19/09/25 19:31:56</td>   <td>72084</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;BusinessPolicyManagement.tearDown()[pri:0, instance:com.epps.bpm.test.BusinessPolicyManagement@2434887]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1250328493</td>   <td></td> </tr>
+</table>

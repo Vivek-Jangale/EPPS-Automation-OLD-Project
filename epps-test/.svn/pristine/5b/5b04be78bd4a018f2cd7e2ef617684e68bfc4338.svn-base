@@ -1,0 +1,514 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>DataDrivenSample</groupId>
+	<artifactId>DataDrivenExcel</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>DataDrivenExcel</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<log4j.configuration>classpath:log4j.xml</log4j.configuration>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+	
+	<dependency>
+	<groupId>com.google.appengine</groupId>
+	<artifactId>appengine-api-1.0-sdk</artifactId>
+	<version>1.9.51</version>
+</dependency>
+
+	
+	<!-- https://mvnrepository.com/artifact/org.sonatype.aether/aether-api
+	     The application programming interface for the repository system. -->
+	<dependency>
+    	<groupId>org.sonatype.aether</groupId>
+    	<artifactId>aether-api</artifactId>
+    	<version>1.13.1</version>
+	</dependency>
+	
+	
+		<!-- Test result reporting: With TestNG 6.0+ you can meet a problem with 
+			“ClassNotFoundException: com.google.inject.Module” exception. In that case 
+			Guice dependency needs to be added. -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Test result reporting: http://reportng.uncommons.org/ The original 
+			TestNG report looks… raw. What is more it is not very intuitive and readable. 
+			There is an alternative – ReportNG. It provides a better looking and more 
+			lucid HTML test reports. Usually in our project a newer TestNG version is 
+			used, so that ReportNG dependency should be excluded. -->
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		
+    <dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.5</version>
+</dependency>
+
+		<!-- WebDriver Java server -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<!-- WebDriver Internet Explorer driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-ie-driver</artifactId>
+			<version>LATEST</version>
+		</dependency> 
+	
+		<!-- TestNG testing framework inspired from JUnit and NUnit: http://testng.org/doc/maven.html -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.4</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- XMLBeans for accessing XML by binding it to Java types: https://xmlbeans.apache.org/ -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+		<!-- Apache POI is the Java API for Microsoft Documents: https://poi.apache.org/ -->
+		<dependency>
+		   <groupId>org.apache.poi</groupId>
+		   <artifactId>poi-ooxml</artifactId>
+		   <version>3.15</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml-schemas</artifactId>
+		    <version>3.15-beta1</version>
+		</dependency>
+
+		<!-- Apache Log4j is for WebDriver logging: http://logging.apache.org/log4j/2.x/ -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/mx4j/mx4j -->
+		<dependency>
+		    <groupId>mx4j</groupId>
+		    <artifactId>mx4j</artifactId>
+		    <version>3.0.2</version>
+		</dependency>
+		<!-- Cucumber dependency for annotation -->
+		<dependency> 
+   			<groupId>info.cukes</groupId> 
+   			<artifactId>cucumber-java</artifactId> 
+   			<version>1.2.4</version> 
+   			<scope>test</scope> 
+		</dependency>		
+		
+		<!-- Below dependencies are for BDD Testing -->
+		
+		   <dependency> 
+   <groupId>junit</groupId> 
+   <artifactId>junit</artifactId> 
+   <version>4.11</version> 
+   <scope>test</scope> 
+</dependency>
+
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-all</artifactId>
+    <version>1.3</version>
+</dependency>
+
+    
+    <dependency> 
+   <groupId>info.cukes</groupId> 
+   <artifactId>cucumber-junit</artifactId> 
+   <version>1.1.8</version> 
+   <scope>test</scope> 
+</dependency>
+<dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-picocontainer</artifactId>
+        <version>1.1.8</version>
+    </dependency>
+
+	
+    
+  <!-- https://mvnrepository.com/artifact/org.sonatype.aether/aether-connector-wagon -->
+	<dependency>
+    	<groupId>org.sonatype.aether</groupId>
+    	<artifactId>aether-connector-wagon</artifactId>
+    	<version>1.13.1</version>
+	</dependency>
+  
+  <!-- https://mvnrepository.com/artifact/org.sonatype.aether/aether-impl -->
+	<dependency>
+    	<groupId>org.sonatype.aether</groupId>
+    	<artifactId>aether-impl</artifactId>
+    	<version>1.13.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.sonatype.aether/aether-spi -->
+	<dependency>
+    	<groupId>org.sonatype.aether</groupId>
+    	<artifactId>aether-spi</artifactId>
+    	<version>1.13.1</version>
+	</dependency>
+		
+	<!-- https://mvnrepository.com/artifact/org.sonatype.aether/aether-util -->
+	<dependency>
+    	<groupId>org.sonatype.aether</groupId>
+    	<artifactId>aether-util</artifactId>
+    	<version>1.13.1</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+	<dependency>
+    	<groupId>commons-cli</groupId>
+    	<artifactId>commons-cli</artifactId>
+    	<version>1.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-aether-provider -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-aether-provider</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-artifact -->
+	<dependency>
+   		<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-artifact</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-compat -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-compat</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-core</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-embedder -->
+	<dependency>
+   		<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-embedder</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-model -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-model</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-model-builder -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-model-builder</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-plugin-api</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-settings-builder -->
+	<dependency>
+    	<groupId>org.apache.maven</groupId>
+    	<artifactId>maven-settings-builder</artifactId>
+    	<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-settings -->
+	<dependency>
+   		<groupId>org.apache.maven</groupId>
+   		<artifactId>maven-settings</artifactId>
+   		<version>3.0.4</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.sonatype.plexus/plexus-cipher -->
+	<dependency>
+    	<groupId>org.sonatype.plexus</groupId>
+    	<artifactId>plexus-cipher</artifactId>
+    	<version>1.7</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.codehaus.plexus/plexus-component-annotations -->
+	<dependency>
+    	<groupId>org.codehaus.plexus</groupId>
+    	<artifactId>plexus-component-annotations</artifactId>
+    	<version>1.5.5</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.codehaus.plexus/plexus-interpolation -->
+	<dependency>
+    	<groupId>org.codehaus.plexus</groupId>
+    	<artifactId>plexus-interpolation</artifactId>
+    	<version>1.14</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.sonatype.plexus/plexus-sec-dispatcher -->
+	<dependency>
+    	<groupId>org.sonatype.plexus</groupId>
+    	<artifactId>plexus-sec-dispatcher</artifactId>
+    	<version>1.3</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.codehaus.plexus/plexus-utils -->
+	<dependency>
+    	<groupId>org.codehaus.plexus</groupId>
+    	<artifactId>plexus-utils</artifactId>
+    	<version>2.0.6</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.wagon/wagon-file -->
+	<dependency>
+    	<groupId>org.apache.maven.wagon</groupId>
+    	<artifactId>wagon-file</artifactId>
+    	<version>2.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.wagon/wagon-http-shared -->
+	<dependency>
+    	<groupId>org.apache.maven.wagon</groupId>
+    	<artifactId>wagon-http-shared</artifactId>
+    	<version>2.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.wagon/wagon-provider-api -->
+	<dependency>
+    	<groupId>org.apache.maven.wagon</groupId>
+    	<artifactId>wagon-provider-api</artifactId>
+    	<version>2.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+	<!-- <dependency>
+    	<groupId>org.apache.poi</groupId>
+    	<artifactId>poi</artifactId>
+    	<version>3.12</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+	<dependency>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi</artifactId>
+	    <version>3.15</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.odftoolkit/simple-odf -->
+	<dependency>
+    	<groupId>org.apache.odftoolkit</groupId>
+    	<artifactId>simple-odf</artifactId>
+    	<version>0.8.1-incubating</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.sonatype.sisu/sisu-guava -->
+	<dependency>
+    	<groupId>org.sonatype.sisu</groupId>
+    	<artifactId>sisu-guava</artifactId>
+    	<version>0.9.9</version>
+	</dependency>
+	
+ <!-- https://mvnrepository.com/artifact/org.sonatype.sisu/sisu-guice -->
+	<dependency>
+    	<groupId>org.sonatype.sisu</groupId>
+    	<artifactId>sisu-guice</artifactId>
+    	<version>3.1.0</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.sonatype.sisu/sisu-inject-bean -->
+	<dependency>
+    	<groupId>org.sonatype.sisu</groupId>
+    	<artifactId>sisu-inject-bean</artifactId>
+    	<version>2.3.0</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.sonatype.sisu/sisu-inject-plexus -->
+	<dependency>
+    	<groupId>org.sonatype.sisu</groupId>
+    	<artifactId>sisu-inject-plexus</artifactId>
+    	<version>2.3.0</version>
+	</dependency>
+	
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>2.52.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.sun/tools -->
+	<dependency>
+    	<groupId>com.sun</groupId>
+    	<artifactId>tools</artifactId>
+    	<version>1.7.0.13</version>
+    	<scope>system</scope>
+        <systemPath>C:/Program Files/Java/jdk1.7.0_45/lib/tools.jar</systemPath>
+	</dependency>
+
+
+	</dependencies>
+	<reporting>
+		<outputDirectory>${project.build.directory}/site</outputDirectory>
+		<plugins>
+			<!-- Maven Project Info Reports Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+				</configuration>
+			</plugin>
+			<!-- Cobertura Code Coverage Plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<instrumentation>
+						<ignoreTrivial>true</ignoreTrivial>
+					</instrumentation>
+					<formats>
+						<format>html</format>
+						<format>xml</format>
+					</formats>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<build>
+		<plugins>
+			<!-- The Compiler Plugin is used to compile the sources of your project: 
+				http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<!-- -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<executions>
+					<execution>
+						<id>copy-resource-one</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/testdata</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/testdata</directory>
+									<includes>
+										<include>SampleExcel.xlsx</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-resource-two</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/testresult</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/testresult</directory>
+									<includes>
+										<include>SampleResult.xlsx</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>   
+			<!-- The Surefire Plugin is used during the test phase of the build lifecycle 
+				to execute the unit tests of an application. It generates reports in two 
+				different file formats: http://maven.apache.org/surefire/maven-surefire-plugin/ -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<!-- To use TestNG suite XML files. This allows flexible configuration 
+						of the tests to be run. These files are created during compile with util.TestNGXML 
+						java, then added to the Surefire Plugin configuration. -->
+					<suiteXmlFiles>
+						<suiteXmlFile>${basedir}/src/main/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<!-- ReportNG uses two reporters pluggable into TestNG. JUnitXMLReporter 
+						generates XML summarize of running tests. It’s used for tools (like CI server). 
+						HTMLReporter creates human readable HTML report. Default TestNG listeners 
+						should be disabled. -->
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+							<name>listener</name>
+							<value>org.uncommons.reportng.HTMLReporter,
+								org.uncommons.reportng.JUnitXMLReporter</value>
+						</property>
+					</properties>
+					<!-- After a the workingDirectory property set, which causes that velocity.log 
+						(file created by Velocity engine used internally by ReportNG) is placed in 
+						a target instead of main project directory (and therefore it is deleted by 
+						the “mvn clean” command). -->
+					<workingDirectory>${basedir}/target/</workingDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,43 @@
+package com.epps.common.util;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+
+public class BaseClass 
+{
+	protected static WebDriver driver;	
+	
+	public static WebDriver chromeTest( WebDriver driver)
+	{
+		driver = driver;
+		System.setProperty("webdriver.chrome.driver","D:/Desktop Data 04-07-2018/epps-selenium/Selenium support files/chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+
+		 Map<String, Object> prefs = new HashMap<String, Object>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);		
+		options.setExperimentalOption("prefs", prefs);
+
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		driver = new ChromeDriver(capabilities); 
+		return driver;
+	}
+	
+	public static WebDriver IETest( WebDriver driver)
+	{
+		driver = driver;
+		System.setProperty("webdriver.chrome.driver","C:/Users/Atik Pathan/Desktop/epps-selenium(Backup)/Explorer-drivers/IEDriverServer.exe");
+		 driver = new ChromeDriver();	
+		 return driver;
+	}
+	
+
+}

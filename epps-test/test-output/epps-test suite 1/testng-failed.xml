@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [epps-test suite 1]">
+  <test name="MMS Regression suite(failed)">
+    <classes>
+      <class name="com.epps.mms.test.CustomerApproveCustomerCycle">
+        <methods>
+          <include name="testApproveCustomer"/>
+          <include name="setUp"/>
+          <include name="customerMaster"/>
+        </methods>
+      </class> <!-- com.epps.mms.test.CustomerApproveCustomerCycle -->
+    </classes>
+  </test> <!-- MMS Regression suite(failed) -->
+</suite> <!-- Failed suite [epps-test suite 1] -->
